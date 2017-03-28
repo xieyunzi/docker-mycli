@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo 'usage: mycli mysql://[user[:password]@][netloc][:port][/dbname]'
+docker-compose run --rm mycli /bin/bash

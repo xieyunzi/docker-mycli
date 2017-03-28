@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  mycli:
+    image: xieyunzi/mycli
+    build: .
+
+networks:
+  default:
+    external:
+      name: xz-bridge
