@@ -7,4 +7,4 @@ echo '    SHOW DATABASES'
 echo '    USE my_database;'
 echo '    DESCRIBE my_table; -- or SHOW COLUMNS FROM my_table;'
 echo "    SELECT table_comment FROM INFORMATION_SCHEMA.TABLES WHERE table_schema='my_database' AND table_name='my_table';"
-docker-compose run --rm mycli mycli mysql://root:root@localhost:3306
+docker-compose run --rm mycli sh -c 'stty onlcr; mycli mysql://root:root@localhost:3306'
